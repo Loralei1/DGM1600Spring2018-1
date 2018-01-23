@@ -10,11 +10,17 @@ public class Animal : MonoBehaviour {
 		print("Now my animal is sleeping.");
 		print("I love my cat");
 		print("No, I really don't.");
-	}
+    }
 
-	void OnMouseDown()
+    void OnMouseDown()
 	{
 		print("Meow.");
+		int a=0;
+		do {
+			print (a);
+			a++;
+		}
+		while(a<5);
 	}
 	// Update is called once per frame
 	void Update () {
