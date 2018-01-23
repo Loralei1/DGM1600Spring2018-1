@@ -28,8 +28,11 @@ to be contained within a set of "{}".
     void Start () {
 		print("I'm starting to get this.");
 		print("Maybe.");
+		print("It's kind of like a computer pidgen");
+		
 		
 	}
+ 
 	
 	// Update is called once per frame
 	void Update () {
