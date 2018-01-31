@@ -12,7 +12,7 @@ public class AnimalC : MonoBehaviour {
 		if (Key == true) {
 			print("Open Door");
 		}
-		
+	//This was the example from class.	
 	} 
 		
 	}
