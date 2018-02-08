@@ -38,6 +38,11 @@ public class ClassNotes : MonoBehaviour {
 		<=
 		< */
 	// Update is called once per frame
+
+	/* Notes for Feb 8 
+	
+	public int A;
+	public int B */
 	void Update () {
 		
 	}
