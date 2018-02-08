@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerDown : MonoBehaviour {
+public class PowerDown : ScriptableObject  {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+public int PowerLoss = -5;
+public Player CurrentPlayer;
+
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
