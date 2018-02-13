@@ -40,10 +40,20 @@ public class ClassNotes : MonoBehaviour {
 	// Update is called once per frame
 
 	/* Notes for Feb 8 
+
+	/* An array is like unto a fence with slats. There can be 
+	as many or as few slats as you need. The slats are 
+	the same type, but not necessarily the same size.
 	
-	public int A;
-	public int B */
-	void Update () {
+	You can have an array of strings, or an array of 
+	floats, but not an array of strings and floats. 
+	
+	Arrays are declared with the square brackets. So:
+	
+	string [] players
+	
+	Counting starts with zero.  */
+	
 		
-	}
+	
 }
