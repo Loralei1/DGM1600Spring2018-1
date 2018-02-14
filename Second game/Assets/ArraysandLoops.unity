@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -77,15 +77,18 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -107,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &884058771
 GameObject:
@@ -179,11 +184,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!4 &884058776
 Transform:
   m_ObjectHideFlags: 0
@@ -208,7 +213,6 @@ GameObject:
   - component: {fileID: 1770364146}
   - component: {fileID: 1770364145}
   - component: {fileID: 1770364144}
-  - component: {fileID: 1770364143}
   - component: {fileID: 1770364142}
   m_Layer: 0
   m_Name: Cube
@@ -235,23 +239,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 385b9964c85139646b221c165e298132, type: 2}
   - {fileID: 11400000, guid: c252635dd59f8164fa7b5b8a0ec9aeca, type: 2}
   Players:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &1770364143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1770364141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 756357abb7f536448b7dcb8a3414529f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HighScores: 
-  PowerUps: []
-  Players: []
+  - {fileID: 11400000, guid: 0ea3e4c6bd2e5164f99cf16f340410d7, type: 2}
+  - {fileID: 11400000, guid: 6cd3bc79778c5874dbdafde529aff3ff, type: 2}
+  - {fileID: 11400000, guid: 4f0cf561e3713834bb6b4d70d2593ea9, type: 2}
+  Health: 0c0000000000000032000000
+  Weapons:
+  - {fileID: 11400000, guid: 1e9d0d9cf01997d459d019b749251e9c, type: 2}
+  - {fileID: 11400000, guid: 35d1774cd2c12d44bb5752d7f154c34f, type: 2}
+  - {fileID: 11400000, guid: ce619ac490abc884f94b939c5fcfd084, type: 2}
+  GoldPieces: 0d000000f401000006000000
+  Speed:
+  - 13
+  - 4
+  - 1
+  Diamonds: 000000003200000001000000
+  Armors:
+  - {fileID: 11400000, guid: eb075cd0ddd2dd8449d5896fbc87695c, type: 2}
+  - {fileID: 11400000, guid: 93774379732c69248872e72415348b86, type: 2}
+  - {fileID: 11400000, guid: 4ad90bfe62b6f4946abaf38527621368, type: 2}
+  Trinkets: 010000000200000003000000
 --- !u!23 &1770364144
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -261,6 +267,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -276,6 +283,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -364,20 +372,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0

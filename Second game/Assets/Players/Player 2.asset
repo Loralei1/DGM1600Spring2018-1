@@ -11,4 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a7b6044ba095b4a90072cb79f68c8e, type: 3}
   m_Name: Player 2
   m_EditorClassIdentifier: 
+  PlayerName: Taako
   Score: 0
+  MPs: 0
