@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
-
+	//This is all from the Unity Roll-a-Ball tutorial found on Unity's website.
 	public float speed;
 	public Text countText;
 	public Text winText;
