@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class Loops : MonoBehaviour {
+
+	public string[] Names;
 
 	/*
-
+	
 
 	The are several different kinds of loops. 
 
@@ -57,11 +59,20 @@ public class NewBehaviourScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		//Loops work great with lists and arrays. 
+		for (int i = 0; i < Names.Length; i++)
 		
+			if (Names[i] == "Lucretia") {
+				print(Names[i]);
+		}
+
+		}
+		// does the same as: 
+		/* foreach (var name in Names)
+			{
+				print(Name);
+			} */
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}
+

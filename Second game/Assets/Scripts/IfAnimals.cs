@@ -19,10 +19,10 @@ always be 9, this will always be true, and this function
 will always carry out the work below--in this case, printing
 "Good Morning" to the console when an object to which 
 this script is attached is clicked.   */
-	if (4 + 5 == 9); {
+	if (4 + 5 == 9) {
 		print ("Good Morning.");
 	}
-	if (Name == "Apple Tree");
+	if (Name == "Apple Tree")
 		print ("This is an " + Name + ".");
 		print ("It has " + AppleCount + " apples.");
 
@@ -30,13 +30,13 @@ this script is attached is clicked.   */
 	name of a game object is "Apple Tree", it will 
 	decide the statement inside the parantheses is true, 
 	and do the work as described below. */
-	if (AppleCount == 50);
+	if (AppleCount == 50)
 		print("This year will be a good harvest.");
 
-	if (AppleCount != 50);
+	if (AppleCount != 50)
 		print("Oh no! This is not an apple tree. Alas! We don't know how to harvest almonds, and we will starve.");
 
-	if (Name != "Apple Tree");
+	if (Name != "Apple Tree")
 		print("This is an almond tree.");
 	} 
 
