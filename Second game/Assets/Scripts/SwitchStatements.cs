@@ -22,7 +22,13 @@ public class SwitchStatements : MonoBehaviour {
 				// Use this for initialization
 
 	public string UserName;
-
+	public int A = 10;
+	public bool Key; 
+	public string Code;
+	public string CharacterName;
+	public int Journals; 
+	public int Countdown; 
+	public string Monster; 
 
 	void Start () {
 		
@@ -45,6 +51,70 @@ public class SwitchStatements : MonoBehaviour {
 				print("No soup for you."); 
 				break;
 		}
+
+		switch (A)
+		{
+		case 10:
+			print ("10");
+			break;
+
+		}
+
+		switch (Key) {
+		case (true):
+			print ("You can open the portal.");
+			break;
+		}
+
+		switch (Code) {
+		case "Pqxv tbfoa!":
+			print ("Stay weird!");
+			break; 
+		}
+
+		switch (CharacterName) { 
+		case "Dipper":
+			print ("Vengeance is underrated! That felt awesome!");
+			break; 
+
+		case "Mabel":
+			print ("Ah! The puppet handbooks didn't warn me about this!"); 
+			break; 
+
+		case "Stan":
+			print ("It's a unicorn made OUT of corn--the CORNICORN!"); 
+			break; 
+
+		case "Ford":
+			print ("SCIENCE!!!!"); 
+			break; 
+
+		case "Bill":
+			print ("HERE'S SOME DEER TEETH! FOR YOU, KID!");
+			break; 
+
+		}
+
+		switch (Journals) {
+		case (3):
+			print ("After all these years, I finally have them all.");
+			break;
+		}
+
+		switch (Countdown) {
+		case (10):
+			print ("It's the final countdown!");
+			break; 
+		}
+
+		switch (Monster) {
+		case "Summerween Trickster":
+			print ("Trick or Treat!"); 
+			print ("Ugh! This is loser candy!"); 
+			break; 
+		}
+
+
 
 	}
 	
