@@ -26,7 +26,7 @@ public class FunctionsWithParameters1 : MonoBehaviour {
 
 			AddArmorClass(15);
 
-			PlayerTrinkets("tin soldier missing a head")
+			PlayerTrinkets("tin soldier missing a head");
 	}
 
 	void AddHealth (int newHealth)
