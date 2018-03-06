@@ -7,6 +7,8 @@ public class FunctionsWithParameters1 : MonoBehaviour {
 	
 	public int Health = 20;
 
+	public int ArmorClass = 11;
+
 	private void OnTriggerEnter(Collider other)
 	{
 			print("Hit something.");
@@ -17,6 +19,14 @@ public class FunctionsWithParameters1 : MonoBehaviour {
 			AddNumbers(14, 2);
 
 			PlayerData("Bob");
+
+			PlayerWeapons("Scythe");
+
+			SubNumbers(50, 40);
+
+			AddArmorClass(15);
+
+			PlayerTrinkets("tin soldier missing a head")
 	}
 
 	void AddHealth (int newHealth)
@@ -33,4 +43,33 @@ public class FunctionsWithParameters1 : MonoBehaviour {
 	{
 		print("This player is " + name);
 	}
+
+	void PlayerWeapons(string name)
+	{
+		print("You have picked up a scythe.");
+	}
+
+	void SubNumbers (int c, int d)
+	{
+		print (c -= d);
+	}
+
+	void AddArmorClass(int NewArmor)
+	{
+		ArmorClass += NewArmor; 
+	}
+
+	void SubArmorClass(int NewArmor)
+	{
+		ArmorClass -= NewArmor; 
+	}
+
+	void PlayerTrinkets(string trinkets)
+	{
+		print("You have a " + trinkets + ".");
+	}
+
+
 }
+
+
