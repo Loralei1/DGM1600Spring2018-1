@@ -24,7 +24,7 @@ public class FunctionsWithReturn : MonoBehaviour {
 		Health = AddHealth(10);
 		Players.Add(NewPlayer("Bob"));
 		ArmorClass = AddArmorClass(5);
-		Weapons.Add(NewWeapons("Railsplitter"));
+		
 	}
 
 	public List<string> Players;
@@ -38,16 +38,10 @@ public class FunctionsWithReturn : MonoBehaviour {
 	{
 		return name; 
 	}
+
 	
-	public string[] Weapons;
-
-	public string[] NewWeapons()
-	{
-		return new string[5];
-	}
-
-
-	// Use this for initialization
+	
+	
 	 
 	}
 

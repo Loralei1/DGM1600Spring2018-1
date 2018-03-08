@@ -11,7 +11,7 @@ the data types, bools or booleans. Bools work in binaries.
 They are either true or false.  */
 	// Use this for initialization
 	void OnMouseDown () {
-		if(Magic != true);
+		if(Magic != true)
 			print("You have used magic to make the tree grow faster!");
 		
 	}
@@ -24,7 +24,7 @@ They are either true or false.  */
 	The if statement below works the same way. I have several
 	other examples in the other scripts attached to this game.*/
 	void OnMouseDrag()	{
-		if(Saw == true);
+		if(Saw == true)
 			print("You have cut the tree down.");
 	}
 	// Update is called once per frame
