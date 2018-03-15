@@ -5,10 +5,10 @@ using UnityEngine;
 
 public abstract class Calculation : ScriptableObject {
 
-	public float aNum; 
-	public float bNum;
+	protected float aNum; 
+	protected float bNum;
 
-public float Calculate (string a, string b)
+public string Calculate (string a, string b)
 {
 	aNum = float.Parse(a);
 	bNum = float.Parse(b);
@@ -16,7 +16,7 @@ public float Calculate (string a, string b)
 	return FinishCalculation();
 }
 
-public abstract float FinishCalculation ();	
+public abstract string FinishCalculation ();	
 
 
 }
