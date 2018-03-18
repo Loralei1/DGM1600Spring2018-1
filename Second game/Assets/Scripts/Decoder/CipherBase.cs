@@ -13,7 +13,7 @@ public class CipherBase : MonoBehaviour {
 
 	public void RunCipher()
 	{
-		DecipherText.text = Cipher.Cshift(Input);  
+		DecipherText.text = Cipher.FinishCipher(Input.text);  
 	}
 
 }

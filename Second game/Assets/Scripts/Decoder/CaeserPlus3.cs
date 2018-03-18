@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CaeserPlus3 : ScriptableObject {
+[CreateAssetMenu]
+public class CaeserPlus3 : Cipher {
 
 	public override string FinishCipher()
 	{
 		
-		return (Input++);
+		return Input(1, Input.Length + 3);
 	}
+
+}
 
 	/* 
 	 * for CaesarMinus3: 
@@ -38,3 +41,5 @@ AtbashDecode:
 	 * return (Input -= 26);
 	 * }
 	 * }
+	 */ 
+	 
