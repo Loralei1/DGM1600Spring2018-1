@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MoveCharacter : MonoBehaviour {
 
-	
+	public float speed = 6.0F;
+	public float jumpSpeed = 8.0F;
+	public float gravity = 10.0F;
 	public Vector3 moveDirection = Vector3.zero;
     public CharacterController controller; 
 	public string Horizontal; 
@@ -23,9 +25,12 @@ public class MoveCharacter : MonoBehaviour {
 		if (controller.isGrounded) {
 
 			moveDirection = transform.TransformDirection(moveDirection);
-			controller.Move(moveDirection * Time.deltaTime);
+			moveDirection *= speed;
 
 		}
+	
+		controller.Move(moveDirection * Time.deltaTime);
+
 	}
 }
 

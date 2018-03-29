@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class MoveY : MoveBase {
+public class MoveY : MoveCharacter {
 
-	public override float Direction ()
+
+	public float DirectionY ()
 	{
 
 

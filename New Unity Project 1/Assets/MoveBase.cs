@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class MoveBase : ScriptableObject {
+/*public abstract class MoveBase : ScriptableObject {
 
 	public float speed = 6.0F;
 	public float jumpSpeed = 8.0F;
@@ -23,4 +23,4 @@ public abstract class MoveBase : ScriptableObject {
 	}
 
 	public abstract float Direction ();
-}
+}*/
