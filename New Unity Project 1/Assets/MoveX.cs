@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class MoveX : MoveCharacter {
+public class MoveX : MoveBase {
 
 
-	public float DirectionX ()
+	public override void Direction ()
 	{
 
-		return moveDirection.x = Input.GetAxis ("Horizontal");
+		moveDirection.x = Input.GetAxis ("Horizontal");
 	
 	}
 	

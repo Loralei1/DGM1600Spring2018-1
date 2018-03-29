@@ -228,9 +228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01512f0e7a569ec4bbbabfb682afaf68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
-  gravity: 20
+  controller: {fileID: 741474657}
+  Horizontal: {fileID: 11400000, guid: f9428bb731baea24c9dcde25d5c3d285, type: 2}
+  Vertical: {fileID: 11400000, guid: b5478de6308397747870db7ec3b00b85, type: 2}
+  Jump: {fileID: 11400000, guid: fafb2fcb7640f484095adedda5c37764, type: 2}
+  MoveBase: {fileID: 11400000, guid: f9428bb731baea24c9dcde25d5c3d285, type: 2}
 --- !u!143 &741474657
 CharacterController:
   m_ObjectHideFlags: 0

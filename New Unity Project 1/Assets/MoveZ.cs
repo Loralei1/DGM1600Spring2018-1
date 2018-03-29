@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class MoveZ : MoveCharacter {
+public class MoveZ : MoveBase {
 
 
-	public float DirectionZ ()
+	public override void Direction ()
 	{
-		return moveDirection.z = Input.GetAxis("Vertical");
+		moveDirection.z = Input.GetAxis("Vertical");
 	}
 
 
