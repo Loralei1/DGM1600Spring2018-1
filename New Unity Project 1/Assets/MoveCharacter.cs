@@ -5,11 +5,11 @@ using UnityEngine;
 public class MoveCharacter : MonoBehaviour {
 
 	
-    public float speed = 6.0F;
-    public float jumpSpeed = 8.0F;
-    public float gravity = 10.0F;
-    private Vector3 moveDirection = Vector3.zero;
-    private CharacterController controller; 
+	public Vector3 moveDirection = Vector3.zero;
+    public CharacterController controller; 
+	public string Horizontal; 
+	public string Vertical;
+	public string Jump;
 
     public void Start ()
     {
@@ -17,11 +17,19 @@ public class MoveCharacter : MonoBehaviour {
     }
 
     
-    void Update() {
+    void Update ()
+	{
         
-        if (controller.isGrounded) {
-            moveDirection.x = Input.GetAxis("Horizontal");
-            moveDirection.y = 0;
+		if (controller.isGrounded) {
+
+			moveDirection = transform.TransformDirection(moveDirection);
+			controller.Move(moveDirection * Time.deltaTime);
+
+		}
+	}
+}
+
+           /* moveDirection.y = 0;
             moveDirection.z = Input.GetAxis("Vertical");
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
@@ -34,3 +42,4 @@ public class MoveCharacter : MonoBehaviour {
     }
 
 }
+*/

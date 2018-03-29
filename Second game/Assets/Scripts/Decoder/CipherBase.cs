@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CipherBase : MonoBehaviour {
+public class CipherBase : MonoBehaviour {}
 
 
-	public InputField Input;
+	/*public InputField Input;
 	public Text DecipherText;
 
 	public Cipher Cipher; 
@@ -16,4 +16,4 @@ public class CipherBase : MonoBehaviour {
 		DecipherText.text = Cipher.FinishCipher(Input.text);  
 	}
 
-}
+}*/
