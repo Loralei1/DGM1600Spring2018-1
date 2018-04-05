@@ -14,3 +14,6 @@ MonoBehaviour:
   speed: 20
   jumpSpeed: 8
   gravity: 10
+  InputX: {fileID: 0}
+  InputZ: {fileID: 0}
+  InputY: {fileID: 0}
