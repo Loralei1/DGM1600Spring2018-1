@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+/*[CreateAssetMenu]
 public class MoveX : MoveBase {
 
 
@@ -13,4 +13,4 @@ public class MoveX : MoveBase {
 	
 	}
 	
-}
+}*/

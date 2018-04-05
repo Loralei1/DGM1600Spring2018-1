@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public abstract class MoveBase : ScriptableObject {
+/*public abstract class MoveBase : ScriptableObject {
 
 	protected float speed = 6.0F;
 	protected float jumpSpeed = 8.0F;
@@ -34,3 +34,4 @@ public abstract class MoveBase : ScriptableObject {
 }
 	public abstract void Direction ();
 } //ScriptableObjectFireflyVideo
+*/

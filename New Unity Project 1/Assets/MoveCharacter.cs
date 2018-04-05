@@ -6,10 +6,7 @@ public class MoveCharacter : MonoBehaviour {
     
     
 	public CharacterController controller; 
-	public MoveBase Horizontal; 
-	public MoveBase Vertical;
-	public MoveBase Jump;
-    public MoveBase MoveBase;
+    public MoveSecond MoveSecond;
     
     
    
@@ -22,7 +19,7 @@ public class MoveCharacter : MonoBehaviour {
 
     void Update ()
     {
-      MoveBase.Move(controller, transform);
+      MoveSecond.Move(controller, transform);
     } 
     }
 
