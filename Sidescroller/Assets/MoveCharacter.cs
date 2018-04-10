@@ -6,8 +6,7 @@ public class MoveCharacter : MonoBehaviour {
 
 	public CharacterController controller; 
 	public MovePattern MovePattern;
-
-
+	
 
 
 

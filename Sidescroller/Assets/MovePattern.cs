@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class MovePattern : ScriptableObject {
 
-	public float speed = 50.0F;
+	public float speed = 6.0F;
 	public float jumpSpeed = 8.0F;
 	public float gravity = 10.0F;
 	private Vector3 moveDirection = Vector3.zero;
@@ -23,17 +23,19 @@ public class MovePattern : ScriptableObject {
 		if (controller.isGrounded) {
 
 			moveDirection = transform.TransformDirection(moveDirection);
-			moveDirection *= speed;
 			moveDirection.x = InputX.MoveInput ();
+			moveDirection *= speed;
 			moveDirection.y = 0;
 			moveDirection.z = 0;
 			moveDirection.y = JumpInput.MoveInput ();
-
+			
 		}
 
+			controller.Move(moveDirection * Time.deltaTime);
+			moveDirection.y -= gravity * Time.deltaTime;
 
-		controller.Move(moveDirection * Time.deltaTime);
-		moveDirection.y -= gravity * Time.deltaTime;
+			//while(Time < )
+			
 
 
 	}

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: NormalJumpInput
   m_EditorClassIdentifier: 
   InputName: Jump
-  FloatValue: 10
+  FloatValue: 7
