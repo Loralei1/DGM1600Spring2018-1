@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-	void OnTriggerEnter (Collider other)
+public PowerUp PowerUpTransfer;
+	
+	private void OnTriggerEnter(Collider obj)
 	{
-		Destroy (other.gameObject);
+		obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();
+
 	}
+
 }
 

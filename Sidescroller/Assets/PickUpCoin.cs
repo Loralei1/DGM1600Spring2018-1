@@ -13,3 +13,13 @@ public class PickUpCoin : MonoBehaviour {
 }
 		}
 }
+
+
+/*using UnityEngine.UI 
+
+public Image FillAmount
+power up class
+float powerlevel
+
+if fill amount > 0 take health away
+put on the health bar*/
