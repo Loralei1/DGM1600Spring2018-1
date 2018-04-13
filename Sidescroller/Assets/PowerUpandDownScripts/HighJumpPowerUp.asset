@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d4952a1dcd4aa47b9b15b434468d40, type: 3}
   m_Name: HighJumpPowerUp
   m_EditorClassIdentifier: 
-  PowerLevel: 0
+  PowerLevel: -1
   MovePatternTransfer: {fileID: 11400000, guid: 680157c927ecd114f849cadd4fc5a893,
     type: 2}

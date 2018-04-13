@@ -1096,8 +1096,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
@@ -1407,6 +1407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PowerUpTransfer: {fileID: 11400000, guid: 0597f03edf8d1904eaf1e4bfdf5655a9, type: 2}
   other: {fileID: 295343200}
+  HealthBar: {fileID: 1414760385}
+  PowerLevel: -0.7
 --- !u!23 &1911543499
 MeshRenderer:
   m_ObjectHideFlags: 0
