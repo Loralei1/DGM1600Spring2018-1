@@ -2,7 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu]
 public class PowerUp : ScriptableObject {
 
-	public MovePattern MovePattern; 
+	public int PowerLevel;
+	public MovePattern MovePatternTransfer;
+
+	public MovePattern Transfer()
+	{
+		return MovePatternTransfer;
+	}
+
 }

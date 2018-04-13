@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-public PowerUp PowerUpTransfer;
+	public GameObject gameObject;
 	
 	private void OnTriggerEnter(Collider obj)
 	{
-		obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();
+		Destroy (gameObject);
 
 	}
 

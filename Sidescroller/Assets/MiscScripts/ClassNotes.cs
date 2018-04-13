@@ -64,7 +64,22 @@ public class ClassNotes : MonoBehaviour {
 
 		Put the script on the PowerUp 
 
+public class Trigger : MonoBehaviour {
 
+	public PowerUp PowerUpTransfer; 
+	public float PowerLevel = 0.1;
+	public Image HealthBar;
+
+	void OnTriggerEnter (Collider obj)
+	{	
+		HealthBar.FillAmount += PowerLevel;
+		if (HealthBar.FillAmount == 0)
+		{
+			obj.GetComponent<MoveCharacter>().MovePattern = PowerUp.MovePattern;
+		}
+	}
+}
+	
 
 		make sure to attach the correct scriptableobjects in the correct places
 	}*/
