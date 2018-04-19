@@ -11,7 +11,8 @@ public class PowerUpPickUpText : MonoBehaviour {
 
 	void Start()
 	{
-		SetPickUpText ();
+		
+		PickUpText.text = "";
 	}
 
 
@@ -22,19 +23,20 @@ public class PowerUpPickUpText : MonoBehaviour {
 		{
 			foreach (var PickUp in PickUp)
 			{
-				//Vector3 = new Vector3 (0, 0, 0);
+				
 				Instantiate(PickUpText); 
+				PickUpText.text = "You picked up" + PickUp +".";
 			}
 		
 		}
 
 	}
 
-	void SetPickUpText ()
+	/*void SetPickUpText ()
 	{
 		PickUpText.text = "You picked up " + PickUp + ".";
 
-	}
+	}*/
 
 
 }

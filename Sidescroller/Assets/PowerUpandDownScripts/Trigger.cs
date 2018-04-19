@@ -14,7 +14,7 @@ public class Trigger : MonoBehaviour {
 
 	{
 		HealthBar.fillAmount += PowerLevel;
-		obj.GetComponent<MoveCharacter> ().MovePattern = PowerUpTransfer.Transfer ();
+		obj.GetComponent<MoveCharacter> ().Player.MovePattern = PowerUpTransfer.Transfer ();
 
 		if (other.gameObject.CompareTag ("Player")) {
 			gameObject.SetActive (false);

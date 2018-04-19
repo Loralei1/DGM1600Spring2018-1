@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ce8a9fce91e9d47886383b21b51477, type: 3}
   m_Name: DeathPattern
   m_EditorClassIdentifier: 
-  speed: 50
-  jumpSpeed: 8
+  speed: 0
+  jumpSpeed: 0
   gravity: 0
   InputX: {fileID: 11400000, guid: d621fc9dfb3d8034990f27605811faf0, type: 2}
   JumpInput: {fileID: 11400000, guid: 1044f2af2d5f4984b8d23378a722d873, type: 2}
