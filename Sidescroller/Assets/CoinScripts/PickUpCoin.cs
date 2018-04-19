@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PickUpCoin : MonoBehaviour {
 
 	public Text ScoreText;
+	public Text YouWinText;
 	private int Score;
 
 	void Start()
@@ -14,7 +15,21 @@ public class PickUpCoin : MonoBehaviour {
 		SetScoreText ();
 	}
 
+		//while(Score < 0) {
+		//play audio 
 
+		//Switch statement for wintext
+		//case (Score >= 12)
+			//Instantiate (YouWinText);the wintext thing
+			// else null
+			//break;
+			//switch (UserName)
+		//{
+			
+			//case "Password":
+				//print("Password is correct.");
+				//break;
+	
 	
 	void OnTriggerEnter (Collider other) 
 		{

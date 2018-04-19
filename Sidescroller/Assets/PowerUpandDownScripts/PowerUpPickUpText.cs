@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class PowerUpPickUpText : MonoBehaviour {
 
 	public Text PickUpText;
-	public string[] PickUpName;
 	public GameObject[] PickUp;
+	
 
 	void Start()
 	{
@@ -18,40 +18,23 @@ public class PowerUpPickUpText : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other) 
 	{
-		foreach (var PickUp in PickUp)
+		if (other.gameObject.CompareTag ("PowerUp")) 
 		{
-			Instantiate(PickUpText); 
+			foreach (var PickUp in PickUp)
+			{
+				//Vector3 = new Vector3 (0, 0, 0);
+				Instantiate(PickUpText); 
+			}
+		
 		}
-
-		//if (other.gameObject.CompareTag ("Coin")) 
-		//{
-			//other.gameObject.SetActive (false);
-			//Score = Score + 1;
-			//SetScoreText ();
-		//}
 
 	}
 
 	void SetPickUpText ()
 	{
-		PickUpText.text = "You picked up " + PickUpName + ".";
+		PickUpText.text = "You picked up " + PickUp + ".";
 
 	}
 
 
-}/*using UnityEngine;
-using System.Collections;
-
-public class ExampleClass : MonoBehaviour
-{
-	public Transform prefab;
-	void Start()
-	{
-		for (int i = 0; i < 10; i++)
-		{
-			Instantiate(prefab, new Vector3(i * 2.0F, 0, 0), Quaternion.identity);
-		}
-	}
 }
-
-}*/
