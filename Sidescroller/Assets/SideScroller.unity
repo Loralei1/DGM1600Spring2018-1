@@ -3688,7 +3688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 295343202}
-  Player: {fileID: 11400000, guid: 5d6f0eef5b136a8408831680d27fdcb0, type: 2}
+  MovePattern: {fileID: 11400000, guid: f1d0a64494303c641925f554dd673c8b, type: 2}
 --- !u!143 &295343202
 CharacterController:
   m_ObjectHideFlags: 0
@@ -4219,7 +4219,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5c636a33e73a98e4cb928a26ecdbef08, type: 2}
+  - {fileID: 2100000, guid: d2cb6f9063f71d041a1151b2088386fd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4265,8 +4265,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 766823207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.57, y: 2.95, z: -7.044922}
-  m_LocalScale: {x: 0.24999994, y: 2.1125019, z: 1}
+  m_LocalPosition: {x: 23.57, y: 2.95, z: -0.11}
+  m_LocalScale: {x: 0.24999994, y: 2.1125019, z: 3.8662891}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
@@ -5086,6 +5086,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1414760383}
+--- !u!1 &1431403099 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1398690810862940, guid: d4cc13632e5b5c748ab9c600ae458664,
+    type: 2}
+  m_PrefabInternal: {fileID: 706528350}
+--- !u!114 &1431403105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1431403099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66cef306f9dade34993d577c6c5bfcee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rock: {fileID: 1398690810862940, guid: d4cc13632e5b5c748ab9c600ae458664, type: 2}
+  Gravity: 6
 --- !u!1 &1587096585
 GameObject:
   m_ObjectHideFlags: 0

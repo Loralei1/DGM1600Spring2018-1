@@ -7,7 +7,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - controller: {instanceID: 0}
-  - Player: {fileID: 11400000, guid: 5d6f0eef5b136a8408831680d27fdcb0, type: 2}
+  - MovePattern: {fileID: 11400000, guid: f1d0a64494303c641925f554dd673c8b, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
