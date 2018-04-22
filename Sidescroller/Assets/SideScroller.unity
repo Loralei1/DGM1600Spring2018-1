@@ -4219,7 +4219,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5c636a33e73a98e4cb928a26ecdbef08, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4246,7 +4246,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 766823207}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4265,7 +4265,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 766823207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.57, y: 2.7708197, z: -7.044922}
+  m_LocalPosition: {x: 23.57, y: 2.95, z: -7.044922}
   m_LocalScale: {x: 0.24999994, y: 2.1125019, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4282,11 +4282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Materials:
-  - {fileID: 2100000, guid: 04f71bcaf60d97f4dafd1d6ac23491d4, type: 2}
-  - {fileID: 2100000, guid: 5c636a33e73a98e4cb928a26ecdbef08, type: 2}
-  - {fileID: 2100000, guid: d2cb6f9063f71d041a1151b2088386fd, type: 2}
-  - {fileID: 2100000, guid: 06f192b7a6fcae346aef06a66c7ddccd, type: 2}
+  GateName: Gate
 --- !u!1 &897830778
 GameObject:
   m_ObjectHideFlags: 0
