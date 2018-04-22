@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - PowerUp
+  - Gate
   layers:
   - Default
   - TransparentFX
