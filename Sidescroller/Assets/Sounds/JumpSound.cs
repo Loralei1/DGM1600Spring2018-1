@@ -13,10 +13,9 @@ public class JumpSound : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		while (Input.GetButton ("Jump") == true) 
+		if (Input.GetButton ("Jump")) 
 		{
 			audiosource.Play ();
-			break;
 		}	
 	}
 }

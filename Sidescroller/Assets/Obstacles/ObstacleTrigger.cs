@@ -11,19 +11,33 @@ public class ObstacleTrigger : MonoBehaviour {
 	public float PowerLevel;
 	public GameObject Enemy;
 	public Transform transform;
+	public Text GameOverText;
+
+	void Start ()
+	{
+		GameOverText.text = "";
+	}
 
 	private void OnTriggerEnter (Collider obj)
 
 	{
 		HealthBar.fillAmount += PowerLevel;
-		obj.GetComponent<MoveCharacter> ().MovePattern = PowerUpTransfer.Transfer ();
+
+		if (HealthBar.fillAmount <= 0) 
+		{
+			obj.GetComponent<MoveCharacter> ().MovePattern = PowerUpTransfer.Transfer ();
+			GameOverText.text = "Game Over.";
+
+		}
 
 
-		for (int i = 0; i < 1; i++) 
-			{
-				Instantiate(Enemy, transform.position, transform.rotation);
+		if (HealthBar.fillAmount > 0) {
+			for (int i = 0; i < 1; i++) {
+				Instantiate (Enemy, transform.position, transform.rotation);
 			}
 
+
+		} 
 	}
 }
 
