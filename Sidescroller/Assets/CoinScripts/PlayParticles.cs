@@ -5,10 +5,14 @@ using UnityEngine;
 public class PlayParticles : MonoBehaviour {
 
 	public ParticleSystem ParticleSystem; 
+	public GameObject other;
 	
 	
 	private void OnTriggerEnter(Collider other)
 	{
-		ParticleSystem.Emit(100);
+		if (other.gameObject.CompareTag ("Coin"))
+		{
+			ParticleSystem.Emit (100);
+		}
 	}  
 }
