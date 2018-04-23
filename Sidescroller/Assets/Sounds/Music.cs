@@ -18,6 +18,8 @@ public class Music : MonoBehaviour {
 		while (speed >= 0) 
 		{
 			audiosource.Play ();
+			break;
 		}
+
 	}
 }
