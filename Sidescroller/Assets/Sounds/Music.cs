@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpSound : MonoBehaviour {
+public class Music : MonoBehaviour {
 
 	public AudioSource audiosource;
-	 
-	void Start()
+	public int speed; 
+
+	void Start () 
 	{
 		audiosource = GetComponent<AudioSource> ();
 	}
+	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetButton ("Jump")) 
+		while (speed >= 0) 
 		{
 			audiosource.Play ();
-		}	
+		}
 	}
 }
