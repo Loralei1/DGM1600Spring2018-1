@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ce8a9fce91e9d47886383b21b51477, type: 3}
   m_Name: Slow Move Pattern
   m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
+  speed: 5
+  jumpSpeed: 4
   gravity: 10
-  InputX: {fileID: 11400000, guid: 9c30757a1ede2db4ab13e44a7bb9bc8e, type: 2}
-  JumpInput: {fileID: 11400000, guid: 1e9cf5720515d6e4ea437f59a7d3af09, type: 2}
+  InputX: {fileID: 11400000, guid: 971590a50e80b214c9732ea01a5eef64, type: 2}
+  JumpInput: {fileID: 11400000, guid: 44b3015ea5bb4bd49b58b156cb985e81, type: 2}

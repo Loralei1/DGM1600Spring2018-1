@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Slow Input X
   m_EditorClassIdentifier: 
   InputName: Horizontal
-  FloatValue: 1
+  FloatValue: 0.5

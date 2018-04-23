@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Name: Slow Power Up
   m_EditorClassIdentifier: 
   PowerLevel: 0
-  MovePatternTransfer: {fileID: 0}
+  MovePatternTransfer: {fileID: 11400000, guid: aa77c4ba16ba5a2498ebad306c7e5aba,
+    type: 2}
