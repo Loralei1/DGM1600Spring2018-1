@@ -10,6 +10,7 @@ public class ObstacleTrigger : MonoBehaviour {
 	public Image HealthBar;
 	public float PowerLevel;
 	public GameObject Enemy;
+	public Transform transform;
 
 	private void OnTriggerEnter (Collider obj)
 
@@ -17,14 +18,12 @@ public class ObstacleTrigger : MonoBehaviour {
 		HealthBar.fillAmount += PowerLevel;
 		obj.GetComponent<MoveCharacter> ().MovePattern = PowerUpTransfer.Transfer ();
 
-		if (other.gameObject.CompareTag ("Player")) {
-			gameObject.SetActive (false);
 
-			for (int i = 0; i < 1; i++) 
+		for (int i = 0; i < 1; i++) 
 			{
-				Instantiate(Enemy);
+				Instantiate(Enemy, transform.position, transform.rotation);
 			}
 
 	}
 }
-}
+

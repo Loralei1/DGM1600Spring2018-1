@@ -21,8 +21,6 @@ public class Patrol : MonoBehaviour {
 
 	void GoToNextPoint ()
 	{
-		if (PatrolPoints.Length == 0)
-			return;
 		agent.destination = PatrolPoints[destPoint].position;
 		destPoint = (destPoint + 1) % PatrolPoints.Length;
 	}
