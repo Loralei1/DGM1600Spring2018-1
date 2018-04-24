@@ -5,7 +5,7 @@ using UnityEngine;
 public class ColorChange : MonoBehaviour {
 
 	public string GateName;
-	//public enum GateColor
+
 	//{
 	//	red, yellow, green, blue
 	//}

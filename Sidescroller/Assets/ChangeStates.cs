@@ -6,13 +6,22 @@ public class ChangeStates : StateMachineBehaviour {
 
 	//public Player Player;
 	//public MovePattern MovePattern;
-	public GameObject other;
+	/*private Input input;
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) 
 	{
 		//Player.MovePattern = MovePattern;
-		other.gameObject.SetActive (false);
+		//other.gameObject.SetActive (true);
+		if (input.GetButton ("Horizontal"))
+		{
+			input == false;
+		}
+		if (input.GetButton ("Jump")) 
+		{
+			input == false;
+		}
 	}
+	*/
 }
 
 
