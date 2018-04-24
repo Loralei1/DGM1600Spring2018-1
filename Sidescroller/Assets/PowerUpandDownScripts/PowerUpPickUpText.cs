@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PowerUpPickUpText : MonoBehaviour {
 
 	public Text PickUpText;
-	public GameObject[] PickUp;
+	public string Name;
 	
 
 	void Start()
@@ -19,16 +19,18 @@ public class PowerUpPickUpText : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other) 
 	{
-		if (other.gameObject.CompareTag ("PowerUp")) 
+		if (other.gameObject.CompareTag ("Player"))
 		{
-			foreach (var PickUp in PickUp)
+			if (Name == "Jump") 
 			{
-				
-				Instantiate(PickUpText); 
-				PickUpText.text = "You picked up" + PickUp +".";
+				PickUpText.text = "Picked Up High Jump.";
+					
 			}
-		
+			else PickUpText.text = "Added Health.";
+			}
+			
 		}
+				
 
 	}
 
@@ -39,4 +41,4 @@ public class PowerUpPickUpText : MonoBehaviour {
 	}*/
 
 
-}
+
