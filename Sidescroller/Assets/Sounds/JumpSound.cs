@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class JumpSound : MonoBehaviour {
 
-	public AudioSource audiosource;
+	public AudioSource boing;
 	 
 	void Start()
 	{
-		audiosource = GetComponent<AudioSource> ();
+		boing = GetComponent<AudioSource> ();
 	}
 	// Update is called once per frame
 	void Update () 
 	{
 		if (Input.GetButton ("Jump")) 
 		{
-			audiosource.Play ();
+			boing.Play ();
 		}	
 	}
 }
