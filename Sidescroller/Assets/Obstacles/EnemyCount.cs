@@ -18,7 +18,7 @@ public class EnemyCount : MonoBehaviour {
 		HitText.text = "Hits: ";
 	}
 
-	private void OnTriggerEnter()
+	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag ("Rock")) 
 		{
