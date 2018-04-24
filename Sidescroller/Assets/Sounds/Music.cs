@@ -5,7 +5,6 @@ using UnityEngine;
 public class Music : MonoBehaviour {
 
 	public AudioSource audiosource;
-	public int speed; 
 
 	void Start () 
 	{
@@ -15,7 +14,7 @@ public class Music : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		while (speed >= 0) 
+		while (Input.GetButton ("Horizontal") == false) 
 		{
 			audiosource.Play ();
 			break;
