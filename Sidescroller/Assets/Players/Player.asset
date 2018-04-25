@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ad58e9c7da0414a82b3a4538893827, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  MovePattern: {fileID: 11400000, guid: f1d0a64494303c641925f554dd673c8b, type: 2}
+  MovePattern: {fileID: 11400000, guid: 1d738fd6b92fc174c982406e7f60d50d, type: 2}

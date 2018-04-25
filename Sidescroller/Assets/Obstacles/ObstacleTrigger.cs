@@ -25,7 +25,7 @@ public class ObstacleTrigger : MonoBehaviour {
 
 		if (HealthBar.fillAmount <= 0) 
 		{
-			obj.GetComponent<MoveCharacter> ().MovePattern = PowerUpTransfer.Transfer ();
+			obj.GetComponent<MoveCharacter> ().Player.MovePattern = PowerUpTransfer.Transfer ();
 			GameOverText.text = "Game Over.";
 
 		}
