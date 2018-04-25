@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class ColorChange : MonoBehaviour {
 
-	public string GateName;
-
+	//public string GateName;
+	public enum gates {Gate, RedGate};
+	public gates gatename; 
 	//{
 	//	red, yellow, green, blue
 	//}
@@ -19,8 +20,8 @@ public class ColorChange : MonoBehaviour {
 	//public bool Key; 
 
 	void OnTriggerExit(Collider other) {
-			switch (GateName)
-		{case "Gate":
+			switch (gatename)
+		{case (gates.Gate):
 			//do color change stuff
 			other.GetComponent<Renderer> ().material.color = GetComponent<Renderer> ().material.color;
 			

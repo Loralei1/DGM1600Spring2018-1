@@ -269,7 +269,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 87037902}
-  - component: {fileID: 87037903}
   m_Layer: 0
   m_Name: Coins
   m_TagString: Untagged
@@ -306,18 +305,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &87037903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 87037901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dfed7752309c0041bb33e740da84c54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoinAway: []
 --- !u!1 &152349233
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &196136394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4362,7 +4349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &297461365
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4459,7 +4446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &322945079
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4725,7 +4712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &485074605
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5570,7 +5557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!1 &805243287
 GameObject:
   m_ObjectHideFlags: 0
@@ -5822,7 +5809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &930959185
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6289,7 +6276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &1102286567
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7247,7 +7234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &1344114063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7644,7 +7631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &1459031007
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7861,7 +7848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &1521357385
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8555,7 +8542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &1806009854
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9025,7 +9012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770d8a6b59198b640b0d1ece7e00997c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateName: Gate
+  gatename: 0
 --- !u!23 &1922190592
 MeshRenderer:
   m_ObjectHideFlags: 0
