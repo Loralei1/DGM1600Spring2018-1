@@ -24,16 +24,10 @@ public class ColorChange : MonoBehaviour {
 		{case (gates.Gate):
 			//do color change stuff
 			other.GetComponent<Renderer> ().material.color = GetComponent<Renderer> ().material.color;
-			
-				//case GateColor.yellow:
-			//	GetComponent<Renderer> ().material.color = Color.yellow;
-			//case GateColor.green:
-				//GetComponent<Renderer> ().material.color = Color.green;
-		//	case GateColor.blue:
-		//		GetComponent<Renderer> ().material.color = Color.blue;
 			break;
-			
-			
+		case (gates.RedGate):
+			print ("Whatever happened to just plain old lavender blue dilly dilly dilly dilly dilly? Silly.");
+			break;
 			}
 			
 

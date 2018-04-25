@@ -10,15 +10,12 @@ public class EnemyCount : MonoBehaviour {
 	public Text HitText;
 	public GameObject other;
 	public GameObject AddMember;
-	private enum HitNumber {First, Second, Third, Fourth};
-	// Use this for initialization
+
 	void Start () 
 
 	{
 		HitsTaken = 0;
 		HitText.text = "Hits: ";
-		HitNumber MyHitNumber;
-		MyHitNumber = HitNumber.First;
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -30,9 +27,7 @@ public class EnemyCount : MonoBehaviour {
 		}
 			
 	}
-
-	
-	// Update is called once per frame
+		
 	void Update () 
 		{
 				HitText.text = "Hits: " + HitsTaken;
