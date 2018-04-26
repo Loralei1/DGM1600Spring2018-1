@@ -4,24 +4,11 @@ using UnityEngine;
 
 public class CoinRotator : MonoBehaviour {
 
-	//public CharacterController controller;
-	private Vector3 rotateDirection = Vector3.zero;
-	
-	
-	//void Start () 
-	//{
-		//controller = GetComponent<CharacterController>(); 
-	//}
+	//This script is only partly modified from one on the Unity Roller Ball Game tutorial. I did it earlier in the semester and remembered it was a way to make things spin; the only things I changed were the Vector3 amounts. 
 	
 	
 	void Update () 
 	{
-		//rotateDirection = transform.TransformDirection(rotateDirection);
-		//rotateDirection.x = 0;
-		//rotateDirection.y = 0;
-		//rotateDirection.z = 100 * Time.deltaTime;
-		//rotateDirection *= speed; 
-		//rotateDirection = rotateDirection * Time.deltaTime;//
 		transform.Rotate (new Vector3 (0, 0, 100) * Time.deltaTime);
 	}
 

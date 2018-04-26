@@ -10,7 +10,7 @@ public class Patrol : MonoBehaviour {
 	public NavMeshAgent agent;
 
 
-	// Use this for initialization
+	// I found this script on the Unity website. 
 	void Start () {
 
 		agent = GetComponent<NavMeshAgent> ();

@@ -34,11 +34,6 @@ public class PowerUpPickUpText : MonoBehaviour {
 
 	}
 
-	/*void SetPickUpText ()
-	{
-		PickUpText.text = "You picked up " + PickUp + ".";
-
-	}*/
-
+	
 
 
