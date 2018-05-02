@@ -14,7 +14,7 @@ public class Load : MonoBehaviour {
 	}
 
 	public void LevelExit(){
-		if (Input.GetKey ("escape"))
+		if (Input.GetButton ("Cancel"))
 		{
 			Debug.Log ("Game has closed.");
 			Application.Quit ();
