@@ -93,6 +93,18 @@ public class SwitchStatements : MonoBehaviour {
 			print ("HERE'S SOME DEER TEETH! FOR YOU, KID!");
 			break; 
 
+		case "Soos":
+			print ("I'm not a pig! I'm a man tripped in a pig's body!");
+			break;
+
+		case "Pacifica":
+			print ("We're PERFECT.");
+			break;
+
+		case "Cosmic":
+			print ("AXOLOTL");
+			break; 
+
 		}
 
 		switch (Journals) {

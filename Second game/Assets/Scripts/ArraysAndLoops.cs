@@ -14,7 +14,8 @@ public Player[] Players;
 	public float[] Speed;
 	public int [] Diamonds;
 	public Armor[] Armors;
-	public int [] Trinkets; 
+	public int [] Trinkets;
+	public int [] Tokens;
 
 	/* The ten lines above are arrays. Arrays are declared by square brackets and hold a range of variables as large or as small 
 	as necessary, so long as those variables are of the same type. The PowerUps, Players, Weapons, and Armors arrays call to scriptable objects.
@@ -22,6 +23,14 @@ public Player[] Players;
 
 	// Use this for initialization
 	void Start () {
+
+		foreach (var trinket in Trinkets) {
+			if (trinket >= 5) {
+				print (trinket);
+			}
+		}
+
+
 	foreach (var player in Players)
 	{
 		print(player.PlayerName);
